@@ -1,5 +1,4 @@
-def carsAndProblems():
-    return {
+carsAndProblems = {
         "Toyota" : "Problemas de queima de óleo em alguns modelos, resultando em consumo excessivo de óleo entre as trocas de óleo programadas.",
         "Honda" : "Falhas na transmissão automática em alguns modelos, resultando em solavancos, solavancos ou mau funcionamento geral da transmissão.",
         "Ford" : " Problemas de confiabilidade da transmissão automática de dupla embreagem Powershift em alguns modelos, levando a solavancos, solavancos ou falhas na transmissão.",
@@ -21,8 +20,7 @@ def carsAndProblems():
         "Porsche" : "Problemas de confiabilidade do sistema de transmissão PDK (Porsche Doppelkupplung) em alguns modelos, incluindo solavancos, solavancos ou falhas de operação.",
         "Ferrari" : "Problemas de confiabilidade do sistema de transmissão F1 (Ferrari Formula One) em alguns modelos, incluindo solavancos, solavancos ou falhas de operação."}
 
-def carsAndPrice():
-    return {
+carsAndPrices = {
     "Toyota" : "R$ 500 a R$ 5.000",
     "Honda" : "R$ 1.000 a R$ 8.000",
     "Ford" : "R$ 1.500 a R$ 10.000",
@@ -45,8 +43,7 @@ def carsAndPrice():
     "Ferrari" : "R$ 2.000 a R$ 15.000"
     }
     
-def cars():
-    return [
+cars = [
     "Toyota",
     "Honda",
     "Ford",

@@ -1,5 +1,5 @@
 from flask import Flask, jsonify
-from python.infos import *
+from infos import *
 
 app = Flask(__name__)
 
@@ -9,15 +9,15 @@ def index():
 
 @app.route("/cars")
 def showCars():
-    return jsonify(cars())
+    return jsonify(cars)
 
 @app.route("/cars-problems")
 def showCarsAndProblems():
-    return jsonify(carsAndProblems())
+    return jsonify(carsAndProblems)
 
 @app.route("/cars-prices")
 def showCarsAndPrices():
-    return jsonify(carsAndPrice)
+    return jsonify(carsAndPrices)
 
 if __name__ == "__main__": 
     app.run(host="0.0.0.0", debug=True)
