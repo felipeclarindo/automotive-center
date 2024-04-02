@@ -1,3 +1,5 @@
+from flask import Flask, jsonify
+
 carsAndProblems = {
         "Toyota" : "Problemas de queima de óleo em alguns modelos, resultando em consumo excessivo de óleo entre as trocas de óleo programadas.",
         "Honda" : "Falhas na transmissão automática em alguns modelos, resultando em solavancos, solavancos ou mau funcionamento geral da transmissão.",
@@ -42,7 +44,7 @@ carsAndPrices = {
     "Porsche" : "R$ 2.000 a R$ 15.000",
     "Ferrari" : "R$ 2.000 a R$ 15.000"
     }
-    
+
 cars = [
     "Toyota",
     "Honda",
@@ -65,3 +67,53 @@ cars = [
     "Porsche",
     "Ferrari",
     ]
+
+carsMoreProblems = {
+    "Fiat" : "Marea",
+    "Ford" : "Fiesta",
+    "Chevrolet" : "Agile",
+    "Renault" : "Sandero",
+    "Volkswagen" : "Gol",
+    "Fiat" : "Palio",
+    "Citroën" : "C3",
+    "Peugeot" : "206",
+    "Renault" : "Logan",
+    "Fiat" : "Siena",
+}
+
+app = Flask(__name__)
+
+#Rota principal com informações da minha API.
+@app.route("/")
+def index():
+    return jsonify({
+        "message": "Welcome to my API.",
+        "endpoints": {
+            "/cars": "Return a car list",
+            "/cars-problems": "Return a problems list",
+            "/cars-prices" : "Return a price list",
+            }
+        })
+
+# Rota que retorna uma lista com os carros.
+@app.route("/cars")
+def showCars():
+    return jsonify(cars)
+
+# Rota que retorna um dicionario com os carros que mais dão problema e a marca de cada carro.
+@app.route("/cars/more-problems")
+def showCarsMoreProblem():
+    return jsonify(carsMoreProblems)
+
+# Rota que retorna um dicionario com o carro e o problema mais comum.
+@app.route("/cars/problems")
+def showCarsAndProblems():
+    return jsonify(carsAndProblems)
+
+# Rota que retorna um dicionario com o carro e os preços de orçamento medio.
+@app.route("/cars/prices")
+def showCarsAndPrices():
+    return jsonify(carsAndPrices)
+
+if __name__ == "__main__": 
+    app.run(host="0.0.0.0", debug=True)
