@@ -2,15 +2,16 @@ from modules.utils import *
 from time import sleep
 from tabulate import tabulate
 
-url = "http://127.0.0.1:5000"
+url = f"http://127.0.0.1:5000"
 
 while True:
+    clear()
     try:
         print("""
 Centro Automotivo Porto
 1 - Buscar problemas comums
-2 - Mostrar carros que costumam da mais problemas
-3 - Buscar orçamento
+2 - Buscar orçamento
+3 - Mostrar carros que costumam da mais problemas
 4 - Sair
         """)
         choice = int(input("Informe a opção desejada: "))
@@ -19,7 +20,7 @@ Centro Automotivo Porto
             case 1:
                 try:
                     clear()
-                    brend = input("Digite a marca de carro cujo quer buscar problemas comums: ").title()
+                    brend = input("Informe a marca de carro cujo deseja buscar problemas comums: ").title()
                     clear()
                     print("Buscando...")
                     sleep(1)
@@ -35,18 +36,6 @@ Centro Automotivo Porto
                     print(f"Erro inesperado: {e}")
             case 2:
                 try:
-                    print("Buscando...")
-                    sleep(1)
-                    dados = showCarsMoreProblems(url)
-                    tabela = tabulate(dados, headers="firstrow", tablefmt="grid")
-                    print(tabela)
-                except ValueError as e:
-                    print(f"Erro de valor: {e}")
-                except Exception as e: 
-                    print(f"Erro inesperado: {e}")
-                    
-            case 3:
-                try:
                     clear()
                     brend = input("Informe a marca para verificar orçamento: ").title()
                     clear()
@@ -58,7 +47,18 @@ Centro Automotivo Porto
                     print(tabela)
                 except Exception as e:
                     print(f"Erro inesperado: {e}")
-
+            case 3:
+                try:
+                    print("Buscando...")
+                    sleep(1)
+                    clear()
+                    dados = showCarsMoreProblems(url)
+                    tabela = tabulate(dados, headers="firstrow", tablefmt="grid")
+                    print(tabela)
+                except ValueError as e:
+                    print(f"Erro de valor: {e}")
+                except Exception as e: 
+                    print(f"Erro inesperado: {e}")
             case 4:
                 try:
                     clear()
