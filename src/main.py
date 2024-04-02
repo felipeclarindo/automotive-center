@@ -2,7 +2,7 @@ from modules.utils import *
 from time import sleep
 from tabulate import tabulate
 
-url = f"http://127.0.0.1:5000"
+url = "http://127.0.0.1:5000"
 
 while True:
     clear()
