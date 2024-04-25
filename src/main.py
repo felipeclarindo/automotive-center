@@ -20,7 +20,7 @@ Centro Automotivo Porto
             case 1:
                 try:
                     clear()
-                    brend = input("Informe a marca de carro cujo deseja buscar problemas comums: ").title()
+                    brend = input("Informe a marca de carro cujo deseja buscar problemas comums: ").title().strip()
                     clear()
                     print("Buscando...")
                     sleep(1)
@@ -37,7 +37,7 @@ Centro Automotivo Porto
             case 2:
                 try:
                     clear()
-                    brend = input("Informe a marca para verificar orçamento: ").title()
+                    brend = input("Informe a marca para verificar orçamento: ").title().strip()
                     clear()
                     print("Buscando...")
                     sleep(1)
@@ -62,7 +62,7 @@ Centro Automotivo Porto
             case 4:
                 try:
                     clear()
-                    confirm = str(input("Deseja mesmo sair? [Sim/Nao]")).title()[0]
+                    confirm = str(input("Deseja mesmo sair? [Sim/Nao]")).title()[0].strip()
                     if confirm == "S":
                         clear()
                         print("Programa finalizado!")
