@@ -11,7 +11,7 @@ while True:
 Centro Automotivo Porto
 1 - Buscar problemas comums
 2 - Buscar orçamento
-3 - Mostrar carros que costumam da mais problemas
+3 - Mostrar carros que costumam dar mais problemas
 4 - Sair
         """)
         choice = int(input("Informe a opção desejada: "))
