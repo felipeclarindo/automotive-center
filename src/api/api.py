@@ -7,7 +7,7 @@ carsAndProblems = {
     "Chevrolet": "Problemas de qualidade do acabamento interior, incluindo rangidos, ruídos e peças quebradiças em alguns modelos.",
     "Volkswagen": "Problemas de confiabilidade do sistema elétrico e eletrônico, resultando em falhas ou mau funcionamento de componentes como luzes, sistemas de áudio e eletrônicos.",
     "BMW": "Problemas de confiabilidade do sistema elétrico e eletrônico, resultando em falhas ou mau funcionamento de componentes como luzes, sistemas de áudio e eletrônicos.",
-    "Mercedes-Benz": "Problemas de confiabilidade do sistema elétrico e eletrônico, resultando em falhas ou mau funcionamento de componentes como luzes, sistemas de áudio e eletrônicos.",
+    "Mercedes": "Problemas de confiabilidade do sistema elétrico e eletrônico, resultando em falhas ou mau funcionamento de componentes como luzes, sistemas de áudio e eletrônicos.",
     "Audi": "Problemas de confiabilidade do sistema de suspensão pneumática em alguns modelos, resultando em vazamentos de ar ou falhas no sistema.",
     "Nissan": "Problemas de confiabilidade da transmissão continuamente variável (CVT) em alguns modelos, resultando em solavancos, trancos ou falhas prematuras.",
     "Hyundai": "Problemas de corrosão prematura em alguns modelos, especialmente em regiões sujeitas a climas extremos ou ambientes corrosivos.",
@@ -23,7 +23,6 @@ carsAndProblems = {
     "Ferrari": "Problemas de confiabilidade do sistema de transmissão F1 (Ferrari Formula One) em alguns modelos, incluindo solavancos, trancos ou falhas de operação."
 }
 
-
 carsAndPrices = {
     "Toyota" : "R$ 500 a R$ 5.000",
     "Honda" : "R$ 1.000 a R$ 8.000",
@@ -31,7 +30,7 @@ carsAndPrices = {
     "Chevrolet" : "R$ 300 a R$ 3.000",
     "Volkswagen" : "R$ 800 a R$ 6.000",
     "BMW" : "R$ 800 a R$ 6.000",
-    "Mercedes-Benz" : "R$ 800 a R$ 6.000",
+    "Mercedes" : "R$ 800 a R$ 6.000",
     "Audi" : "R$ 1.500 a R$ 10.000",
     "Nissan" : "R$ 1.200 a R$ 9.000",
     "Hyundai" : "R$ 500 a R$ 4.000",
@@ -54,7 +53,7 @@ cars = [
     "Chevrolet",
     "Volkswagen",
     "BMW",
-    "Mercedes-Benz",
+    "Mercedes",
     "Audi",
     "Nissan",
     "Hyundai",

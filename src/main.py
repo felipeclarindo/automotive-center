@@ -1,4 +1,4 @@
-from src.modules.utils import *
+from modules.utils import *
 from time import sleep
 from tabulate import tabulate
 
@@ -11,7 +11,7 @@ while True:
 Centro Automotivo Porto
 1 - Buscar problemas comums
 2 - Buscar orçamento
-3 - Mostrar carros que costumam da mais problemas
+3 - Mostrar carros que costumam dar mais problemas
 4 - Sair
         """)
         choice = int(input("Informe a opção desejada: "))
@@ -20,7 +20,7 @@ Centro Automotivo Porto
             case 1:
                 try:
                     clear()
-                    brend = input("Informe a marca de carro cujo deseja buscar problemas comums: ").title()
+                    brend = input("Informe a marca de carro: ").title().strip()
                     clear()
                     print("Buscando...")
                     sleep(1)
@@ -37,7 +37,7 @@ Centro Automotivo Porto
             case 2:
                 try:
                     clear()
-                    brend = input("Informe a marca para verificar orçamento: ").title()
+                    brend = input("Informe a marca para verificar orçamento: ").title().strip()
                     clear()
                     print("Buscando...")
                     sleep(1)
@@ -62,7 +62,7 @@ Centro Automotivo Porto
             case 4:
                 try:
                     clear()
-                    confirm = str(input("Deseja mesmo sair? [Sim/Nao]")).title()[0]
+                    confirm = str(input("Deseja mesmo sair? [Sim/Nao]")).title()[0].strip()
                     if confirm == "S":
                         clear()
                         print("Programa finalizado!")
