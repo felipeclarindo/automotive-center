@@ -32,7 +32,8 @@ class Main:
                                 self.clear()
                                 brend = input("Informe a marca de carro cujo deseja buscar problemas comums: ").title().strip()
                                 valid = validateStringInput(brend)
-                                input("APERTE ENTER PARA CONTINUAR!")
+                                if not valid:
+                                    input("APERTE ENTER PARA CONTINUAR")
                             self.clear()
                             print("Buscando...")
                             sleep(1)
