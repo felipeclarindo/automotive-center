@@ -11,25 +11,25 @@ Este programa é uma aplicação de linha de comando para interagir com uma API 
 git clone https://github.com/felipeclarindo/automotive-center.git
 ```
 
-3. Instale as dependencias do projeto:
+2. Instale as dependencias do projeto:
 
 ```bash 
 pip install -r requirements.txt
 ```
 
-4. Navegue até a pasta da api do projeto:
+3. Navegue até a pasta da api do projeto:
 
 ```bash 
 cd automotive-center/src/api
 ```
 
-5. Inicie a API: 
+4. Inicie a API: 
 
 ```bash 
 python api.py
 ```
 
-6. Navegue até a página principal
+5. Navegue até a página principal
 
 ```bash
 cd automotive-center

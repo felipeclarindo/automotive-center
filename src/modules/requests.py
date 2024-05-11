@@ -1,8 +1,4 @@
 import requests
-from os import system, name
-
-def clear():
-    system('cls' if name == 'nt' else 'clear')
 
 def searchPrice(url:str, brend:str):
     try: 
@@ -20,7 +16,7 @@ def searchPrice(url:str, brend:str):
     except requests.exceptions.RequestException as e:
         print(f"Erro na solicitação HTTP: {e}")
     except Exception as e:
-        print(f"Erro inesperado: {e}")
+        print(e)
 
 def searchProblems(url:str, brend:str):
     try: 
@@ -30,15 +26,12 @@ def searchProblems(url:str, brend:str):
             return problem
         else:
             raise KeyError("Marca não encontrada.") 
-            
     except ValueError as e:
         print(f"Erro de valor: {e}")
     except requests.exceptions.RequestException as e:
         print(f"Erro na solicitação HTTP: {e}")
-    except KeyError as e: 
-        print(f"Erro de chave: {e}")
     except Exception as e:
-        print(f"Erro inesperado: {e}")
+        print(e)
 
 def showCarsMoreProblems(url):
     try:
@@ -57,5 +50,5 @@ def showCarsMoreProblems(url):
     except KeyError as e:
         print(f"Erro de chave: {e}")
     except Exception as e:
-        print(f"Erro inesperado: {e}")
+        print(e)
     
