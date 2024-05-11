@@ -1,8 +1,4 @@
 import requests
-from os import system, name
-
-def clear():
-    system('cls' if name == 'nt' else 'clear')
 
 def searchPrice(url:str, brend:str):
     try: 
